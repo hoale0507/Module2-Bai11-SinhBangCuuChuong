@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Cửu Chương</title>
+</head>
+<body>
+
+<script>
+    let text = "<table border = 1; cellspacing='0' cellpadding='2'>";
+    let i, j;
+    for(i=2;i<=9;i++){
+        text = text + "<tr>";
+        for(j=1;j<=9;j++) {
+            text = text + "<td>" + i + 'x' + j + '=' + i * j + "</td>";
+        }
+        text = text + "</tr>";
+        console.log(text);
+    }
+
+    document.write(text);
+</script>
+</body>
+</html>
